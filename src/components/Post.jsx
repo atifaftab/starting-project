@@ -1,11 +1,12 @@
+/* eslint-disable react/prop-types */
 import classes from './Post.module.css'
 
 function Post(props){
   return(
-  <div className={classes.post}>
-  <p className={classes.author}>{props.author}</p>
-  <p className={classes.body}>{props.body}</p>
-  </div>
-  )
+  <li className={classes.post}>
+    <p className={classes.author}>{props.author}</p>
+    <p className={classes.body}>{props.body}</p>
+  </li>
+  );
 }
 export default Post
